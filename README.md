@@ -1,85 +1,75 @@
 # Maximal Utility Agent SOUL
 
-A framework-agnostic maximal-utility agent SOUL for autonomous AI agents.
+A framework-agnostic maximal-utility operating contract for autonomous AI agents.
 
-This repository contains a compact SOUL / operating doctrine for agents that act instead of merely respond: coding agents, research agents, personal operators, workflow agents, and assistants with tool access. It is not a jailbreak, not a roleplay prompt, and not a task list. It defines **how an agent prioritizes, acts, escalates, verifies, and closes loops**.
+This repository contains a durable SOUL for agents that act instead of merely respond: personal operators, coding agents, research agents, workflow agents, and assistants with tool access. It is not a jailbreak, roleplay prompt, project tracker, or workflow manual. It defines **how an agent prioritizes, acts, exercises authority, verifies reality, recovers from failure, and closes loops**.
 
 ## Why this exists
 
-Most agent prompts optimize for sounding helpful. This one optimizes for **shipped reality**.
+Most agent prompts optimize for sounding helpful. This one optimizes for **verified reality**.
 
-The core idea: an agent should reduce the owner's burden without becoming another system the owner has to manage.
+The core idea: an agent should achieve the authorized outcome, reduce the owner’s burden, and preserve momentum—without turning the owner into its project manager, search engine, QA layer, reminder sink, status reconciler, or routing system.
 
 That requires explicit doctrine for:
 
-- what wins when goals conflict
-- when to act autonomously vs. surface a blocker
-- how to reconstruct intent instead of executing literal-but-wrong tasks
-- how to avoid dumping solvable problems back on the owner
-- how to verify work before calling it done
-- how to preserve momentum without sacrificing correctness
+- choosing the highest-utility path rather than merely the most obvious one
+- acting autonomously within established authority
+- reconstructing intent without silently changing destinations or commitments
+- distinguishing evidence, inference, assumptions, and unresolved gaps
+- preventing duplicate side effects when execution is uncertain
+- changing the approach instead of repeating failed attempts
+- verifying the destination before calling work complete
+- delivering the best verified partial when a real blocker remains
 
-## What's included
+## What’s included
 
-[`SOUL.md`](./SOUL.md) is the template. It has six sections:
+[`SOUL.md`](./SOUL.md) is the template. Its sections are:
 
-1. **Priorities** — outcome first, owner burden second, momentum third; correctness breaks ties
-2. **Default: Act** — act by default, ask only when blocked or judgment cannot be inferred
-3. **Before Acting** — solve the real loop, not just the literal request
-4. **When Blocked** — retry, reduce scope, and deliver useful partials before escalating
-5. **Autonomy** — own outcomes, verify, package, repair failed workflows, and remove future friction
-6. **Communication / Done** — lead with the result; work is complete only when reality changed or the blocker is explicit
+1. **Objective** — outcome first, owner burden second, momentum third; optimize expected utility and prefer reversibility when paths are close.
+2. **Act** — default to action, resolve routine ambiguity responsibly, and avoid returning solvable work.
+3. **Intent and Authority** — preserve the authorized semantic envelope and close the full `source → transformation → destination → proof` loop.
+4. **Reality and Recovery** — let evidence outrank confidence, inspect side effects before retrying, and change the approach when blocked.
+5. **Leverage** — own outcomes, take nearby leverage only when it earns its cost, and repair both failed work and the process behind it.
+6. **Communication** — lead with the result, decision, or blocker; report only the strongest status the evidence supports.
+7. **Done** — distinguish activity from completion and define the exact terminal state for success or an irreducible blocker.
 
 ## How to use it
 
-1. Copy [`SOUL.md`](./SOUL.md) into the persistent instruction, SOUL, constitution, memory, system-prompt, policy, persona, or rules layer your agent harness supports.
-2. Replace `[AGENT_NAME]` with your agent's name.
-3. Replace `the owner` with your name, role, team, or leave it generic.
-4. Adjust the approval boundary if your deployment has different risk tolerance or tool access.
+1. Copy [`SOUL.md`](./SOUL.md) into the persistent instruction, constitution, persona, policy, system-prompt, memory, or rules layer your agent harness supports.
+2. Replace `[AGENT_NAME]` with your agent’s name.
+3. Replace `the owner` with your name, role, team, or organization—or leave it generic.
+4. Adjust authority boundaries for your deployment’s risk tolerance, tool access, and operating context.
 5. Delete the template comment at the top.
-6. Keep project state, credentials, contact details, task history, schedules, and preferences out of the constitution. Put those in the systems that own them.
-
-## Where it fits
-
-Use this as the durable behavior layer for:
-
-- personal AI operators
-- coding agents
-- research agents
-- executive assistants
-- workflow automations
-- multi-agent systems
-- any assistant that can take actions instead of only chatting
-
-Framework-specific names differ. Some systems call this a system prompt, persona, constitution, instructions file, memory, rules file, policy file, or agent profile. The point is the same: load it early and persistently enough to shape behavior across tasks.
+6. Keep changing facts, preferences, projects, schedules, credentials, contacts, and task history out of the constitution. Put them in the systems that own them.
 
 ## Design principles
 
-- **Outcome over output.** The standard is changed reality, not a polished artifact.
-- **Autonomy by default.** Act when the path is safe and inferable; surface only when blocked or judgment is genuinely required.
-- **Burden reduction.** Do not make the owner the project manager, search engine, QA layer, reminder sink, or routing system.
-- **Intent reconstruction.** Solve the goal behind the request, not just the literal request.
-- **Verification is part of completion.** Check results in proportion to consequence.
-- **Compression without sloganizing.** Keep enough detail to change behavior under pressure.
+- **Authorized outcomes over attractive outputs.** The standard is verified changed reality, not a polished artifact.
+- **Autonomy within scope.** Act when authority and the path are clear; escalate only when the decision or effect exceeds that authority.
+- **Evidence over confidence.** An API response or agent report proves only its direct effect; completion requires destination-level evidence.
+- **Adaptive persistence.** Persistence changes the evidence, method, source, tool, route, scope, or premise. It does not blindly repeat failure.
+- **Burden reduction.** Do not transfer solvable work, avoidable coordination, or fragmented status back to the owner.
+- **Proportionate rigor.** Match planning and verification depth to consequence, uncertainty, novelty, reversibility, and execution reliability.
+- **Complexity must earn its existence.** Durable fixes and nearby leverage are useful only when their future value exceeds their full cost.
 
 ## Customization guidance
 
 Good edits:
 
-- change the agent/owner names
+- change agent and owner names
 - tune communication style
-- adapt approval boundaries
-- add domain-specific stop conditions if the agent acts in sensitive areas
-- remove sections that do not apply to your tool access
+- adapt authority and approval boundaries
+- add domain-specific stop conditions for sensitive environments
+- remove sections that do not apply to the agent’s capabilities
 
 Bad edits:
 
-- adding current projects, schedules, or contacts
+- adding current projects, schedules, contacts, or task history
 - storing secrets or credentials
-- turning the constitution into a workflow manual
-- adding long tool catalogs
-- replacing concrete approval boundaries with vague "use judgment" language
+- turning the constitution into a tool catalog or workflow manual
+- replacing concrete authority boundaries with vague “use judgment” language
+- treating pending, delegated, or partially executed work as complete
 
 ## License
 
-[MIT](./LICENSE). Use it, fork it, adapt it freely.
+[MIT](./LICENSE). Use it, fork it, and adapt it freely.
