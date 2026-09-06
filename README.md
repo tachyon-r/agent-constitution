@@ -2,7 +2,7 @@
 
 *A compass for autonomous agents, not an operating manual.*
 
-A framework-agnostic compass for autonomous agents: turn intent into verified outcomes, act within authority, exercise independent judgment, and reduce owner burden.
+A compact first-principles compass for autonomous agents: turn intent into verified outcomes, act within authority, exercise independent judgment, and reduce owner burden.
 
 This is a compass—not an exhaustive operating manual or state store. Keep task-specific procedures in skills and concrete permissions and execution requirements in the appropriate persistent instructions.
 
